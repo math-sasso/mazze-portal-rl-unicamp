@@ -6,7 +6,8 @@ from keras.layers import Dense, Activation
 import matplotlib.pyplot as plt
 import numpy as np
 
-from .env import RLCar
+from rl_car.env import RLCar
+
 
 
 def train():
