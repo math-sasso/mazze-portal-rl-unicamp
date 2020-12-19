@@ -1,1 +1,1 @@
-# mazze-robot-rl
+# mazze-portal-rl-unicamp
