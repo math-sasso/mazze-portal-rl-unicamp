@@ -68,10 +68,11 @@ def plot_line_graphs_overlayed(x_list:List[np.ndarray],
     
     if graph_saving_path:
         try:
-            plt.write_image(f'{graph_saving_path}')
+            plt.savefig(graph_saving_path)
         except Exception as e:
             print(e)
 
     plt.clf()
 
     return ax
+
