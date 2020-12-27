@@ -63,14 +63,12 @@ def plot_line_graphs_overlayed(x_list:List[np.ndarray],
     ax.set_ylabel(y_axe_name,fontsize = 10)
     ax.set_title(title,fontsize = 20)
     ax.figure.set_size_inches(figsize[0], figsize[1])
-    fig.tight_layout()
-    plt.show()
     
-    if graph_saving_path:
-        try:
-            plt.savefig(graph_saving_path)
-        except Exception as e:
-            print(e)
+    plt.show()
+    plt.draw()
+    plt.savefig(graph_saving_path)
+    fig.tight_layout()
+
 
     plt.clf()
 
