@@ -18,7 +18,6 @@ def plot_line_graphs_overlayed(x_list:List[np.ndarray],
                                   figsize:Tuple[int] = (10,10)):
     
     """Plot multiple graphs together .
-
     Args:
         x_list (List[np.ndarray]): input data x axis list.
         y_list (List[np.ndarray]): input data y axis list.
@@ -28,7 +27,6 @@ def plot_line_graphs_overlayed(x_list:List[np.ndarray],
         title (str): graph title.
         legend_position (str): legend position on graph.
         figsize (Tuple[int]): tuple with figsize dimentions.
-
     Returns:
         (matplotlib.Axes): the axes object.
     """
@@ -64,13 +62,12 @@ def plot_line_graphs_overlayed(x_list:List[np.ndarray],
     ax.set_title(title,fontsize = 20)
     ax.figure.set_size_inches(figsize[0], figsize[1])
     
-    plt.show()
-    plt.draw()
     plt.savefig(graph_saving_path)
+    plt.show()
+    # plt.draw()
     fig.tight_layout()
 
 
     plt.clf()
 
     return ax
-
